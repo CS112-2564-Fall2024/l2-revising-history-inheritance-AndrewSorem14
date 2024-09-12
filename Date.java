@@ -268,6 +268,25 @@ public class Date
 		}
 	}
 
+	public int compareTo(Object other) {
+		Date otherDate;
+
+		if (other == null) {
+			return -1;
+		}
+		else if (!(other instanceof Date)) {
+			return -1;
+		}
+		
+		otherDate = (Date) other;
+		
+		
+
+		if (otherDate.month > this.month) {
+
+		}
+	}
+
 	/**
 	 * Determines if calling object comes before param Date (checks month, day, year completely)
 	 * 
